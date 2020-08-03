@@ -1,0 +1,58 @@
+.background {
+    background: aquamarine;
+    background-size: 100% 100%;
+  }
+  
+  .auth-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .auth-block {
+    width: 430px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 1);
+    color: #222 !important;
+    padding: 32px;
+  }
+  
+  .auth-block img {
+    display: block;
+    margin: auto;
+  }
+  
+  .loginInput {
+    margin: auto;
+    display: block;
+    text-align: center;
+    height: 45px !important;
+    width: 100% !important;
+    font-size: 1.2em;
+    background-color: white;
+    border: 0;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    outline: none;
+  }
+  
+  .loginInput:hover {
+    border: #007ccd 2px solid;
+  }
+  
+  .loginBtn {
+    background-color: aquamarine !important;
+    color: #000 !important;
+    border-radius: 3px;
+  }
+
+  img {
+    width: 30em;
+    margin-bottom: 10px !important;
+  }

@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Ivesur",
+        "address": "Cra.54 #19-84",
+        "city":"Bogotá",
+        "country":"Colombia",
+        "long":"-74.1331251",
+        "lat":"4.6664166"
+    },
+    {
+        "name": "Mi Águila",
+        "address": "Carrera 15 80-90",
+        "city":"bogotá",
+        "country":"",
+        "long":"-74.0564594",
+        "lat":"4.6673091"
+    },
+    {
+        "name": "Aeropuerto el Dorado",
+        "address": "Cra.54 #19-84",
+        "city":"Bogota",
+        "country":"Colombia",
+        "long":"-74.1464288",
+        "lat":"4.7005915"
+    },
+    {
+        "name": "Work",
+        "address": "Carrera 15 80-90",
+        "city":"bogotá",
+        "country":"",
+        "long":"-74.0564594",
+        "lat":"4.6673091"
+    },
+    {
+        "name": "Home",
+        "address": "Cra. 50c #41c-43",
+        "city":"Bogotá",
+        "country":"Colombia",
+        "long":"-74.1289957",
+        "lat":"4.5959547"
+    },
+    {
+        "name": "Sweetheart",
+        "address": "AV. Boyaca - CL 152B",
+        "city":"Bogotá",
+        "country":"Colombia",
+        "long":"-74.0655305",
+        "lat":"4.7397484"
+    }
+]

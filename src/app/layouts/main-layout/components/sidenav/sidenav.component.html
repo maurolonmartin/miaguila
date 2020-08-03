@@ -1,0 +1,58 @@
+<mat-sidenav-container>
+  <mat-sidenav opened="menu" mode="side">
+    <img src="../../../../../assets/images/logo.PNG" alt="" class="innerLogo">
+    <div class="userLogo">
+      <img src="../../../../../assets/images/user.PNG" alt="">
+      <p>Jorge Solano</p>
+      <span>Beneficiario</span>
+    </div>
+    
+    <mat-list>
+      <mat-list-item>
+        <div matLine routerLink="/map" routerLinkActive="active-link">
+          <img src="../../../../../assets/images/aguila.PNG" alt="">
+          Pedir Aguila
+        </div>
+      </mat-list-item>
+      <mat-list-item>
+        <div matLine routerLink="/flights" routerLinkActive="active-link">
+          <img src="../../../../../assets/images/vuelos.PNG" alt="">
+          Vuelos
+        </div>
+      </mat-list-item>
+      <mat-list-item>
+        <div matLine routerLink="/routes" routerLinkActive="active-link">
+          <img src="../../../../../assets/images/rutas.PNG" alt="">
+          Rutas
+        </div>
+      </mat-list-item>
+      <mat-list-item>
+        <div matLine routerLink="/manage" routerLinkActive="active-link">
+          <img src="../../../../../assets/images/administrar.PNG" alt="">
+          Administrar
+        </div>
+      </mat-list-item>
+      <mat-list-item>
+        <div matLine routerLink="/statistics" routerLinkActive="active-link">
+          <img src="../../../../../assets/images/estadisticas.PNG" alt="">
+          Estadisticas
+        </div>
+      </mat-list-item>
+      <mat-list-item>
+        <div matLine routerLink="/payments" routerLinkActive="active-link">
+          <img src="../../../../../assets/images/tarjeta.PNG" alt="">
+          Medios de Pago
+        </div>
+      </mat-list-item>
+      <mat-list-item>
+        <div matLine routerLink="/payments" routerLinkActive="active-link">
+          <img src="../../../../../assets/images/logout.PNG" alt="">
+          Cerrar sesion
+        </div>
+      </mat-list-item>
+    </mat-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
