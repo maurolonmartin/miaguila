@@ -1,65 +1,61 @@
 mat-sidenav-container {
-  height: 90vh !important;
+  height: 100vh !important;
 
   mat-sidenav {
-    width: 60px;
+    width: 250px;
 
     .userLogo {
-      margin-left: 5em;
-    }
-
-    .innerLogo {
-      max-width: 15em;
-    }    
-
-    mat-list-item {
-      justify-content: center;
+      display: flex;
+      flex-direction: column;
       align-items: center;
 
       img {
-        margin-right: 10px;
+        max-width: 100px;
+        max-height: 100px;
+      }
+    }
+
+    .innerLogo {
+      max-width: 12em;
+
+    }    
+
+    mat-list-item {
+      display: flex;
+      align-items: center;
+      height: 55px;
+      width: 100%;
+      font-size: 18px;
+      
+
+      .mat-list-item-content {
+        padding: 0!important;
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+      }
+
+      img {
+        margin-right: 15px;
         max-width: 30px;
       }
     }
-  }
 
-  mat-sidenav:hover {
-    width: 250px;
+    mat-list-item:hover {
+      background-color: rgba($color: #000000, $alpha: .1);
+    }
   }
 
   mat-sidenav-content {
-    height: 90vh;
+    height: 100vh;
+  }
+
+  .active-link {
+    background-color: rgba($color: #000000, $alpha: .1);
+    border: none;
+
   }
 }
 
-.example-container {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.example-is-mobile .example-toolbar {
-  position: fixed;
-  /* Make sure the toolbar will stay on top of the content as it scrolls past. */
-  z-index: 2;
-}
-
-h1.example-app-name {
-  margin-left: 8px;
-}
-
-.example-sidenav-container {
-  /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
-     causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
-  flex: 1;
-}
-
-.example-is-mobile .example-sidenav-container {
-  /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
-     `<body>` to be our scrolling element for mobile layouts. */
-  flex: 1 0 auto;
-}

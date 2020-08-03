@@ -1,0 +1,7 @@
+{
+    "*":{
+        "target": "https://malma.com.co/favoritos.JSON/",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}

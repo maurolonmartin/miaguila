@@ -1,27 +1,34 @@
-# MiAguila
+# Prueba Técnica Mi Águila
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.3.
+Esta prueba se presenta para el cargo de Desarrollador Front End
 
-## Development server
+## Tecnologías implementadas
+Angular 10
+MapBox
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Instalación e inicialización del proyecto
 
-## Code scaffolding
+### 1. Clonar el repositorio
+El primer paso es clonar localmente el repositorio, para esto realizamos las siguientes acciones desde la consola.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```bash
+$ git clone https://github.com/maurolonmartin/miaguila.git
+```
 
-## Build
+### 2. Instalar dependencias
+Para correr este proyecto localmente se debe tener previamente instalada una versión de node en su máquina, se recomienda usar la versión v12.18.2
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+use **npm** para instalar las dependencias
 
-## Running unit tests
+```bash
+$ npm install
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### 3. Iniciar el proyecto
+para iniciar el proyecto realice la siguiente operación
 
-## Running end-to-end tests
+```bash
+$ ng serve -o
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Esto abrirá el proyecto en un navegador web. Recomendamos usar Chrome.

@@ -9,6 +9,10 @@ export class HttpService {
     constructor( private http: HttpClient ) {}
 
     public get<t>() {
-        return this.http.get<t>(environment.apiUrl);
+        return this.http.get<t>(environment.apiJSON);
+    }
+
+    getJson(url: string) {
+        return this.http.get(url);
     }
 }

@@ -1,4 +1,66 @@
-<div id="mapa-mapbox"></div>
-<div class="searchArea">
-    <button mat-raised-button color="primary" (click)="getAddress()">Buscar</button>
+<div class="container">
+    <div id="mapa-mapbox"></div>
+    <div class="searchArea">
+        <div class="blueBox">
+            <div class="controls">
+                <span style="color: aquamarine;">
+                    <img src="../../../assets/images/parami.PNG" alt="">
+                      Para Mi
+                    </span>
+                <span>
+                    <img src="../../../assets/images/colega.PNG" alt="">
+                    Colega
+                </span>
+                <span>
+                    <img src="../../../assets/images/invitado.PNG" alt="">
+                    Invitado
+                </span>
+                
+            </div>
+        </div>
+        <div class="origin">
+            <div class="initial">
+                <span class="circle" style="color: aquamarine; border: 1px solid aquamarine;">1</span>
+                <span style="margin-left: 5px;">Origin</span>
+            </div>
+            <div class="circles">
+                <span class="circle">2</span>
+                <span class="circle">3</span>
+                <span class="circle">4</span>
+                <span class="circle">5</span>
+                <span class="circle">6</span>
+            </div>
+            
+        </div>
+        <div class="stateSelect">
+            <form class="example-container" formGroup="stateForm">
+                <mat-form-field appearance="standard" style="width: 100%;" selectedState="selectedState.value">
+                    <mat-select formControl="selectedState">
+                      <mat-option selected value="cundinamarca">Cundinamarca</mat-option>
+                      <mat-option value="antioquia">Antioquia</mat-option>
+                      <mat-option value="valle">Valle del Cauca</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </form>
+            
+        </div>
+        <div class="pickup">
+            <input matInput placeholder="Donde te recogemos?">
+        </div>
+        <div class="favoritos">
+            <p>Favoritos</p>
+            <div class="list">
+                <mat-selection-list #favoritos [multiple]="false">
+                    <mat-list-option *ngFor="let favorito of locations" [value]="favorito" (click)="setNewLocation(favorito)">
+                        
+                        <mat-icon mat-list-icon style="color: darkgoldenrod;">stars</mat-icon>
+                        <div mat-line style="color: #CBCDCF; font-weight:500;" >{{favorito.name}}</div>
+                        <div mat-line style="color: #CBCDCF;">{{favorito.address}}, {{favorito.city}}, {{favorito.country}}</div>
+                    </mat-list-option>
+                  </mat-selection-list>
+            </div>
+        </div>
+    </div>
 </div>
+
+

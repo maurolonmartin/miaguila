@@ -11,6 +11,6 @@ export class MapService {
     constructor(private http: HttpService) {}
 
     getAddress(): Observable<any> {
-        return this.http.get();
+        return this.http.get<any>();
     }
 }

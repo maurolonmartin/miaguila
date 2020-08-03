@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
   mapBoxKey: 'pk.eyJ1IjoibWF1cm9sb25tYXJ0aW4iLCJhIjoiY2tkYzNjZm92NDB3NDJ4cXl6cW92YzEzOCJ9.NZPgCtXIOlRgsRyvAjFZuw',
-  apiUrl: './favoritos.JSON'
+  apiUrl: 'locations',
+  apiJSON: 'assets/favoritos.JSON'
 };
 
 /*
